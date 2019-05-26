@@ -1,0 +1,1 @@
+ginadmin -c ./configs/ginadmin/config.toml -m ./configs/ginadmin/model.conf -swagger ./internal/app/ginadmin/swagger
