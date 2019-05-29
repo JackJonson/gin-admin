@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80012
 File Encoding         : 65001
 
-Date: 2019-05-28 12:37:40
+Date: 2019-05-29 23:06:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -68,7 +68,7 @@ CREATE TABLE `g_menu` (
   KEY `idx_g_menu_hidden` (`hidden`),
   KEY `idx_g_menu_parent_id` (`parent_id`),
   KEY `idx_g_menu_parent_path` (`parent_path`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- ----------------------------
 -- Records of g_menu
@@ -83,6 +83,11 @@ INSERT INTO `g_menu` VALUES ('7', '2019-05-27 19:26:21', '2019-05-27 19:26:21', 
 INSERT INTO `g_menu` VALUES ('8', '2019-05-27 19:27:32', '2019-05-27 19:27:32', null, 'edb76232-23eb-44c9-93de-f6941ef559e9', '聚会点管理', '1000000', 'dashboard', '/meeting_point_manage', '0', '', '', 'root');
 INSERT INTO `g_menu` VALUES ('9', '2019-05-27 19:28:27', '2019-05-27 19:28:27', null, '1143bc40-9d71-4422-8b92-57d909ae02ca', '行政管理', '1000000', 'dashboard', '/administrative_manage', '0', '', '', 'root');
 INSERT INTO `g_menu` VALUES ('10', '2019-05-27 19:30:05', '2019-05-27 19:30:05', null, '8d4f81cc-e5cd-4f6b-aa8d-893aacb3580b', '圣工管理', '1000000', 'dashboard', '/holywork_manage', '0', '', '', 'root');
+INSERT INTO `g_menu` VALUES ('11', '2019-05-29 22:56:47', '2019-05-29 22:57:36', null, '9beb29ef-f079-4ae9-8021-60de8afb1323', '信徒管理', '1000000', 'user', '/believer_manage/manage', '0', 'd32998a6-8cc1-4991-9e30-125eff8b6531', 'd32998a6-8cc1-4991-9e30-125eff8b6531', 'root');
+INSERT INTO `g_menu` VALUES ('12', '2019-05-29 22:57:59', '2019-05-29 22:57:59', null, '0723a35f-091d-40a4-9390-84e830a701c2', '圣工管理', '1000000', 'setting', '/holywork_manage/manage', '0', '8d4f81cc-e5cd-4f6b-aa8d-893aacb3580b', '8d4f81cc-e5cd-4f6b-aa8d-893aacb3580b', 'root');
+INSERT INTO `g_menu` VALUES ('13', '2019-05-29 22:58:22', '2019-05-29 22:58:22', null, '971d31a0-3479-4a99-9871-36366e589988', '行政管理', '1000000', 'user', '/administrative_manage/manage', '0', '1143bc40-9d71-4422-8b92-57d909ae02ca', '1143bc40-9d71-4422-8b92-57d909ae02ca', 'root');
+INSERT INTO `g_menu` VALUES ('14', '2019-05-29 22:58:37', '2019-05-29 22:58:37', null, 'b6c8d302-01a9-4a00-847f-b6f5f76c9100', '聚会点管理', '1000000', 'user', '/meeting_point_manage/manage', '0', 'edb76232-23eb-44c9-93de-f6941ef559e9', 'edb76232-23eb-44c9-93de-f6941ef559e9', 'root');
+INSERT INTO `g_menu` VALUES ('15', '2019-05-29 22:58:53', '2019-05-29 22:58:53', null, '55713ced-a1ce-4570-aa24-84a41c2fe11a', '小组管理', '1000000', 'user', '/group_manage/manage', '0', '4db442c3-2150-47eb-a67b-75a11fcfc7b0', '4db442c3-2150-47eb-a67b-75a11fcfc7b0', 'root');
 
 -- ----------------------------
 -- Table structure for g_menu_action
