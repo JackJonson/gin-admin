@@ -117,7 +117,6 @@ func getStatusByError(c *gin.Context, err error, status int) int {
 	if status > 0 {
 		return status
 	}
-
 	switch err {
 	case errors.ErrBadRequest:
 		status = 400
